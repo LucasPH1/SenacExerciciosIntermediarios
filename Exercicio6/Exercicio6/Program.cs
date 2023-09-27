@@ -1,4 +1,4 @@
-﻿decimal valorCarro, parcela, acrescimo = 0, valorParcela = 0;
+﻿decimal valorCarro, parcela, acrescimo = 0, valorParcela = 0, valorFinal;
 
 
 Console.WriteLine("Digite o valor do carro: ");
@@ -45,10 +45,14 @@ switch (parcela)
     default:
         Console.WriteLine("Número de parcelas inválido");
         break;
+}
+valorFinal = valorCarro * acrescimo;
+valorParcela = valorCarro / parcela;
 
-    valorParcela = valorCarro / parcela;
-
-    Console.WriteLine("O preco final da compra é: R$" + (valorCarro * acrescimo));
+if(valorFinal > 0)
+{
+    Console.WriteLine("O preco final da compra é: R$" + valorFinal);
     Console.WriteLine("Quantidade de parcelas: " + parcela);
     Console.WriteLine("valor de cada parcela: R$" + valorParcela);
 }
+
