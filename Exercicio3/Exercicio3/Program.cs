@@ -11,12 +11,12 @@ sindicato = salarioBruto * 0.03m;
 FGTS = salarioBruto * 0.11m;
 
 
-if(salarioBruto >= 900 & salarioBruto < 1500)
+if(salarioBruto >= 900 && salarioBruto < 1500)
 {
     IR = salarioBruto * 0.05m;
     valorPorcento = 5;
 }
-else if(salarioBruto >= 1500 & salarioBruto < 2500)
+else if(salarioBruto >= 1500 && salarioBruto < 2500)
 {
     IR = salarioBruto * 0.1m;
     valorPorcento = 10;
